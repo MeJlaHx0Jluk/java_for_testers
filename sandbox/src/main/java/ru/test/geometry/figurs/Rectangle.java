@@ -9,4 +9,8 @@ public class Rectangle {
     public static double rectangleArea(double nOne, double nTwo){
         return nOne * nTwo;
     }
+
+    public static double rectanglePerimetr(double firstSide, double secondSide){
+         return 2 * (firstSide + secondSide);
+    }
 }

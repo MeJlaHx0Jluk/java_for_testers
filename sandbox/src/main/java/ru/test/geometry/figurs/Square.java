@@ -6,7 +6,11 @@ public class Square {
         System.out.println(txtresult);
     }
 
-    private static double squareArea(double side){
+    public static double squareArea(double side){
         return side * side;
+    }
+
+    public static Object squarePerimetr(int side) {
+        return 4 * side;
     }
 }
