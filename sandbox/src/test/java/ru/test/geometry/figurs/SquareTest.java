@@ -6,13 +6,15 @@ import org.junit.jupiter.api.Test;
 public class SquareTest {
     @Test
     void checkResultForSquareArea(){
-        var result = Square.squareArea((5));
-        Assertions.assertEquals(25, result);
+        var objForArea = new Square(10);
+        var result = objForArea.areaSquare();
+        Assertions.assertEquals(100, result);
     }
 
     @Test
     void checkResultForSquarePerimetr(){
-        var result = Square.squarePerimetr(5);
+        var objForPerimetr = new Square(5);
+        var result = objForPerimetr.perimetrSquare();
         Assertions.assertEquals(20, result);
     }
 }

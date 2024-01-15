@@ -5,13 +5,15 @@ import ru.test.geometry.figurs.Rectangle;
 public class RectangleTest {
     @Test
     void checkResultForRectangleArea(){
-        var result = Rectangle.rectangleArea(10, 10);
+        var obj = new Rectangle(10, 10);
+        var result = obj.areaRectangle();
         Assertions.assertEquals(100, result);
     }
 
     @Test
     void checkResultForRectanlePerimetr(){
-        var result = Rectangle.rectanglePerimetr(8, 4);
+        var obj = new Rectangle(8, 4);
+        var result = obj.perimetrRectangle();
         Assertions.assertEquals(24, result);
     }
 }
