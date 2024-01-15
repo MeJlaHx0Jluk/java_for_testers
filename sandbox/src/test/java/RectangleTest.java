@@ -11,7 +11,7 @@ public class RectangleTest {
     }
 
     @Test
-    void checkResultForRectanlePerimetr(){
+    void checkResultForRectanglePerimetr(){
         var obj = new Rectangle(8, 4);
         var result = obj.perimetrRectangle();
         Assertions.assertEquals(24, result);
